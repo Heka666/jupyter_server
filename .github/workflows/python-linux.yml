@@ -96,7 +96,7 @@ jobs:
       - name: Base Setup
         uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
       - name: Download sdist
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
       - name: Install From SDist
         run: |
           pip install --find-links=./sdist "jupyter_server[test]>=0.0.dev0"
